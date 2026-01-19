@@ -33,7 +33,7 @@ export default function BottomNav() {
         {navItems.map((item) => {
           const Icon = item.icon;
           const isActive = pathname === item.path;
-          const badgeCount = 'badge' in item ? item.badge : 0;
+          const badgeCount = typeof item.badge === 'number' ? item.badge : 0;
           return (
             <button
               key={item.path}
