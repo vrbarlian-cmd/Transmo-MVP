@@ -178,7 +178,7 @@ export const mockData = {
       note: '🎬 Movie tickets',
       privacy: 'friends' as const,
       status: 'completed' as const,
-      paymentMethod: 'gopay' as const,
+      paymentMethod: 'qris' as const,
       type: 'payment' as const,
       createdAt: new Date(Date.now() - 5 * 60 * 60 * 1000), // 5 hours ago
       likes: [{ id: '1', userId: '1', transactionId: '2', createdAt: new Date(), user: mockUsers[0] }],

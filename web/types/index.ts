@@ -63,7 +63,7 @@ export type Friend = {
 
 export type PaymentMethod = {
   id: string;
-  type: 'qris' | 'bank_va' | 'gopay' | 'ovo' | 'dana' | 'shopeepay';
+  type: 'qris' | 'bank_va' | 'ovo' | 'dana' | 'shopeepay';
   name: string;
   logo?: string;
   accountNumber?: string;

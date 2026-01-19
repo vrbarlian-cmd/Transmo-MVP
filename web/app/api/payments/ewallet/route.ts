@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-const E_WALLETS = ['gopay', 'ovo', 'dana', 'shopeepay'];
+const E_WALLETS = ['ovo', 'dana', 'shopeepay'];
 
 export async function POST(request: NextRequest) {
   try {
