@@ -18,7 +18,9 @@ export type Transaction = {
   note: string;
   privacy: 'public' | 'friends' | 'private';
   status: 'pending' | 'completed' | 'failed' | 'declined' | 'cancelled';
-  paymentMethod: 'qris' | 'bca' | 'mandiri' | 'bni' | 'bri';
+  // Payment method used for this transaction.
+  // Includes QRIS, virtual account (bank_va), and direct bank codes.
+  paymentMethod: 'qris' | 'bank_va' | 'bca' | 'mandiri' | 'bni' | 'bri';
   type: 'payment' | 'request';
   createdAt: Date;
   likes: Like[];
